@@ -1,0 +1,97 @@
+.CryptoCards{
+    width: 100%;
+    height:4rem;
+    background: #3C415C;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    color: #B4A5A5;
+    cursor: pointer;
+    font-size: .7rem;
+    &__data{
+        width: 10%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        border-left: #301B3F 1px solid;
+        height: 100%;
+  
+    }
+    justify-content: space-around;
+    &:hover{
+        background: #B4A5A5;
+        color: #3C415C;
+    }
+    .devaulated{
+        color: red;
+    }
+    .apreciated{
+        color: green;
+    }
+}
+@media screen and (max-width:'768px') {
+    .CryptoCards{
+        flex-wrap: wrap;
+        height: fit-content;
+        &__data{
+            width: 50%;
+            height: fit-content;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 5px;
+            border-left: none;
+            height: 3rem;
+            border-bottom: #301B3F 1px solid;
+      
+        }
+    }
+    .mobile{
+        font-weight: 900;
+    }
+}
+@media screen and (min-width:'769px') {
+
+    .mobile{
+        display: none;
+        
+    }
+}
+
+.mantine-Group-root{
+    button{
+        background: #301B3F;
+        color: #B4A5A5;
+    }
+  
+}
+.mantine-c94evu{
+    border: 1px solid #B4A5A5;
+}
+
+html{
+    background: #151515;
+}
+
+*::-webkit-scrollbar {
+    width: 1rem;
+    /* width of the entire scrollbar */
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #301B3F;
+    
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #3C415C;
+    /* color of the scroll thumb */
+    
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 1px solid #B4A5A5;
+    /* creates padding around scroll thumb */
+  }

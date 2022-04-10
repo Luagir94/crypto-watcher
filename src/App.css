@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 .App {
   text-align: center;
 }
@@ -35,4 +36,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+  box-sizing: border-box;
 }

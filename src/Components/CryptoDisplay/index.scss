@@ -1,0 +1,63 @@
+.CryptoDisplay{
+
+    height: fit-content;
+    background: #301B3F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+   
+}
+
+.CryptoHeader{
+ 
+    height:3rem;
+    background: #3C415C;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #B4A5A5;
+    cursor: pointer;
+    &__data{
+        width: 10%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-left: #301B3F 1px solid;
+        &:nth-child(1){
+            border-left: none;
+        }
+        
+  
+    }
+    justify-content: space-around;
+
+    
+}
+.CryptoTable{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: #301B3F;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:'769px') {
+    .CryptoHeader{
+        display: none;
+    }
+    .CryptoDisplay{
+        width: 100%;
+    }
+    .CryptoTable{
+        width: 100%;
+        height: 70%;
+    }
+}
